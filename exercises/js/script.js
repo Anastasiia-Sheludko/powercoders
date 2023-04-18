@@ -112,7 +112,7 @@ console.log(result);
 
 // Odd / even reporter
 
-const yourNumber = prompt("Please enter a number between 0 and 20");
+let yourNumber = prompt("Please enter a number between 0 and 20");
 
 while (yourNumber <= 20 && yourNumber >= 0) {
   if (yourNumber % 2 == 0) {
@@ -122,3 +122,35 @@ while (yourNumber <= 20 && yourNumber >= 0) {
   }
   break;
 }
+
+// Odd / even reporter 2.0
+
+let yourNumber = prompt("Please enter a number between 0 and 20");
+
+for (let step = 0; step <= 20; step++) {
+  if (yourNumber % 2 == 0) {
+    console.log(`${yourNumber} is even.`);
+  } else {
+    console.log(`${yourNumber} is odd.`);
+  }
+}
+
+// Multiplication tables
+
+let randomNumber = prompt("Please enter a number between 0 and 10");
+let result;
+
+result = randomNumber * 9;
+
+console.log(`${randomNumber} * 9 = ${result}`);
+
+
+// Multiplication tables 2.0
+
+let randomNumber = prompt("Please enter a number between 0 and 10");
+let result;
+
+for (let i = 0; i <= 10; i++) {
+result = randomNumber * 9;
+}
+console.log(`${randomNumber} * 9 = ${result}`);
